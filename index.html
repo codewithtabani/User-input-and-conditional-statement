@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Input and Conditional Statement</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+</head>
+
+
+
+<body>
+    <div class="container">
+        <a href="index.html"><button>Home</button></a>
+        <a href="#"><button>Exercise 1</button></a>
+        <a href="Exercise2.html"><button>Exercise 2</button></a>
+        <a href="Exercise3.html"><button>Exercise 3</button></a>
+        <a href="Exercise4.html"><button>Exercise 4</button></a>
+        <a href="Exercise5.html"><button>Exercise 5</button></a>
+        <a href="Exercise6.html"><button>Exercise 6</button></a>
+    </div>
+
+    <script>
+        let city = prompt('Enter Your City')
+        if (city == 'karachi') {
+            alert('Welcome to city of lights')
+        }
+
+        let gender = prompt('Gender')
+        if (gender == 'male') {
+            alert('Good Morning Sir')
+        } else if (gender == 'female') {
+            alert('Good Morning Ma’am')
+        }
+
+        let signal = prompt('Enter any color of road traffic signal')
+        if (signal == 'red') {
+            alert('Must Stop')
+        } else if (signal == 'yellow') {
+            alert('Ready to move')
+        } else if (signal == 'green') {
+            alert('Move now')
+        }
+
+        let fuel = prompt('Enter remaining fuel in car (in litres)')
+        if (fuel < 0.25) {
+            alert('Please refill the fuel in your car')
+        }
+
+        var a = 4;
+        if (++a === 5) {
+            alert("given condition for variable a is true");
+        }
+
+        var b = 82;
+        if (b++ === 83) {
+            alert("given condition for variable b is true");
+        }
+
+        var c = 12;
+        if (c++ === 13) {
+            alert("condition 1 is true");
+        }
+        if (c === 13) {
+            alert("condition 2 is true");
+        }
+        if (++c < 14) {
+            alert("condition 3 is true");
+        }
+        if (c === 14) {
+            alert("condition 4 is true");
+        }
+
+        var materialCost = 20000;
+        var laborCost = 2000;
+        var totalCost = materialCost + laborCost;
+        if (totalCost === laborCost + materialCost) {
+            alert("The cost equals");
+        }
+
+        if (true) {
+            alert("True");
+        }
+        if (false) {
+            alert("False");
+        }
+
+        if ("car" < "cat") {
+            alert("car is smaller than cat");
+        }
+
+        let subject1 = +prompt('Enter your marks obtained in 1st subject out of 100')
+        let subject2 = +prompt('Enter your marks obtained in 2nd subject out of 100')
+        let subject3 = +prompt('Enter your marks obtained in 3rd subject out of 100')
+        let subject4 = +prompt('Enter your total marks')
+
+        document.write('<font size=5 color=blue>Marksheet</font>' , '<br> <br> <br>')
+        let totalMarks = 300
+        document.write('Total Marks : ' , totalMarks , '<br>' )
+        document.write('Marks obtained : ' , subject4, '<br>')
+
+        let percentage = subject4 / totalMarks * 100 
+        document.write('Percentage : ' , percentage , ' %' ,'<br>')
+
+        let grade = 'Grade : '
+        let remarks = 'Remarks : '
+
+        if (80 >= percentage ) {
+            document.write(grade,'A-one ,<br>')
+            document.write(remarks,'Excellent ,<br>')
+        }
+        else if (70 >= percentage) {
+            document.write(grade,'A ,<br>')
+            document.write(remarks,'Good ,<br>')
+        }
+        else if (60 >= percentage) {
+            document.write(grade,'B  , <br>')
+            document.write(remarks,'Good ,<br>')
+        }
+        else{
+            document.write(grade,'You need to improve ,<br>')
+            document.write(remarks,'Sorry ,<br>')
+        }
+
+        let secretNumber = 3
+        let sNumber = prompt('Guess the secret number') 
+        
+        if (sNumber == secretNumber) {
+            alert('Bingo! Correct answer')
+        }else if (sNumber == ++secretNumber) {
+            alert('Close enough to the correct answer')
+        }
+        else{
+            alert('Wrong ! Better luck next time')
+        }
+
+        let specialNumber = prompt('Choose Any Number')
+        // normalNumb0er = specialNumber        
+        if (specialNumber / 3) {
+            alert('It is divisible by 3');
+        }  else{
+            alert('It is not divisible by 3')
+        }
+        
+        normalNumber = prompt('Enter any Number,I will tell you whether it is odd or even')
+        if (normalNumber % 2 == 0) {
+            alert('even')
+        }else{
+            alert('Odd')
+        }
+
+        let t = prompt('Enter temperature in your area')
+        if (t > 40) {
+            alert('It is too hot outside')
+        }
+        else if (t > 30) {
+            alert('The Weather today is Normal')
+        }
+        else if (t > 20) {
+            alert('Today’s Weather is cool')
+        }
+        else{
+            alert('OMG! Today’s weather is so Cool')
+        }
+
+        let num1 = +prompt('Enter Your First Number')
+        let num2 = +prompt('Enter Your Second Number')
+        let operators = prompt('Enter Your Operation (+, -, *, /, %)')
+        
+        if(operators == '+'){
+            alert(num1+num2)
+        }
+        else if (operators == '-') {
+            alert(num1+num2)
+        }
+        else if (operators == '*') {
+            alert(num1*num2)
+        }
+        else if (operators == '/') {
+            alert(num1/num2)
+        }
+        else if (operators == '%') {
+            alert(num1%num2)
+        }
+        
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
